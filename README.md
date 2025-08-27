@@ -116,10 +116,7 @@ We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.
 
 ## Learn More
 
-- Read the full [Whitepaper](site/public/whitepaper.md)
-- Watch the [concept video](https://youtube.com/...)
-- Join the discussion on [Discord](https://discord.gg/...)
-
+- Read the full [Whitepaper](https://h5project.space/whitepaper)
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -133,8 +130,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Contact
 
 - Author: Scott
-- Email: [your-email@example.com]
-- Twitter: [@yourhandle]
+- Email: scott@h5project.space
 
 ---
 
