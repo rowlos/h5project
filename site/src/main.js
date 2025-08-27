@@ -359,7 +359,7 @@ function setupModals() {
     
     // GitHub
     document.getElementById('btn-github').addEventListener('click', () => {
-        window.open('https://github.com/yourusername/chronomesh', '_blank');
+        window.open('https://github.com/rowlos/h5project', '_blank');
     });
     
     // Close modals
