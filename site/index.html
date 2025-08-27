@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H5 Project - Solving AI Governance with Time</title>
+    <meta name="description" content="Using the speed of light as an unbreakable security protocol for superintelligent AI governance">
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <h1>H5 Project</h1>
+            <p>Initializing Temporal Governance System...</p>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="top-nav">
+        <div class="nav-content">
+            <div class="nav-brand">
+                <h1>H5 Project</h1>
+                <span class="tagline">Solving AI Governance with Time</span>
+            </div>
+            <div class="nav-controls">
+                <button id="btn-whitepaper" class="btn-nav">Whitepaper</button>
+                <button id="btn-about" class="btn-nav">About</button>
+                <button id="btn-github" class="btn-nav">GitHub</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <canvas id="canvas"></canvas>
+        
+        <div class="info-panel" id="info-panel">
+            <h2>The Problem</h2>
+            <p class="highlight">Earth's maximum light-delay: <span class="critical">133 milliseconds</span></p>
+            <p>Any AI safety system on Earth can be compromised in less than a second.</p>
+            
+            <div class="phase-indicator">
+                <div class="phase-title">Current Phase</div>
+                <div class="phase-name" id="phase-name">Initialization</div>
+                <div style="margin-top: 10px; font-size: 0.85em; color: #8892b0;">Tip: Use 5x or 10x speed for setup</div>
+            </div>
+        </div>
+
+        <div class="timeline-panel" id="timeline-panel">
+            <h3>Mission Timeline</h3>
+            <div class="time-display">
+                <div class="year">Year <span id="year">0</span></div>
+                <div class="day">Day <span id="day">0</span></div>
+            </div>
+            <div class="timeline-events" id="timeline-events"></div>
+        </div>
+
+        <div class="elder-panel" id="elder-panel">
+            <h3>Uncatchable Elders</h3>
+            <div class="elder-list" id="elder-list">
+                <p class="placeholder">No probes launched yet</p>
+            </div>
+        </div>
+
+        <div class="council-panel" id="council-panel">
+            <h3>Solar System Council</h3>
+            <div class="council-list" id="council-list">
+                <p class="placeholder">Council not yet established</p>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="btn-play" class="btn-control btn-primary">Start Simulation</button>
+            <button id="btn-decision" class="btn-control" disabled>Trigger Decision</button>
+            <button id="btn-reset" class="btn-control">Reset</button>
+            
+            <div class="speed-control">
+                <label>Speed:</label>
+                <input type="range" id="speed-slider" min="0" max="5" value="2" step="1">
+                <span id="speed-display">1x</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="decision-modal">
+        <div class="modal-content">
+            <h2>Critical Decision Simulation</h2>
+            <p>Watching light-speed democracy in action...</p>
+            <div id="decision-visualization"></div>
+            <button class="btn-modal-close">Close</button>
+        </div>
+    </div>
+
+    <div class="modal" id="about-modal">
+        <div class="modal-content">
+            <h2>About H5 Project</h2>
+            <p>
+                John Harrison's H4 chronometer solved navigation with time. The H5 Project solves AI governance with time.
+                By anchoring decisions in the fundamental physics of spacetime separation, we create an unbreakable 
+                constitutional framework for superintelligent systems.
+            </p>
+            <h3>The Architecture:</h3>
+            <ul>
+                <li><strong>The Solar Five:</strong> Earth, Moon, Mars, Jupiter, Saturn - active governance council</li>
+                <li><strong>The Elder Fleet:</strong> Uncatchable probes carrying humanity's timeless principles</li>
+                <li><strong>Physics as Law:</strong> Light-speed delays that cannot be hacked or bypassed</li>
+                <li><strong>Living Constitution:</strong> Each Elder probe embodies a civilizational principle</li>
+            </ul>
+            <h3>The Elder Names:</h3>
+            <p style="margin-top: 15px; font-style: italic;">
+                Tjukurrpa (Dreamtime) • Ma'at (Truth) • Ananke (Inevitability) • Dao (The Way) • 
+                Urd (Memory) • Dharma (Cosmic Order) • Ubuntu (Humanity) • Logos (Reason)
+            </p>
+            <button class="btn-modal-close">Close</button>
+        </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>

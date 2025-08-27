@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H5 Project - A Living, Physics-Based Constitution</title>
+    <meta name="description" content="A Framework for Civilizational AI Safety">
+    <meta property="og:title" content="H5 Project - A Living, Physics-Based Constitution">
+    <meta property="og:description" content="Anchoring AI governance in the immutable laws of physics. A framework where separation of powers is enforced by light-speed delay.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="H5 Project - Physics-Based AI Safety">
+    <meta name="twitter:description" content="Using spacetime itself as the ultimate security protocol for superintelligent AI governance.">
+    <style>
+        :root {
+            --color-bg: #000000;
+            --color-panel: rgba(0, 0, 0, 0.8);
+            --color-primary: #00d9ff;
+            --color-secondary: #ff00ff;
+            --color-warning: #ffa500;
+            --color-success: #00ff88;
+            --color-text: #e0e6ed;
+            --color-text-dim: #a8b2c0;
+            --color-danger: #ff4444;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: #000814;
+            background: radial-gradient(ellipse at center, #001122, #000814);
+            color: var(--color-text);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .header {
+            text-align: center;
+            padding: 3rem 0;
+            border-bottom: 1px solid rgba(0, 217, 255, 0.2);
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+            background: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            color: var(--color-text-dim);
+            margin-bottom: 2rem;
+        }
+
+        .meta {
+            color: var(--color-text-dim);
+            font-size: 0.9rem;
+        }
+
+        .meta strong {
+            color: var(--color-primary);
+        }
+
+        .version-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--color-danger), var(--color-warning));
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin-top: 0.5rem;
+            font-weight: bold;
+        }
+
+        .abstract {
+            background: linear-gradient(135deg, rgba(255, 68, 68, 0.05), rgba(0, 217, 255, 0.05));
+            border-left: 3px solid var(--color-danger);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+
+        .abstract p {
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        .urgent-opener {
+            font-weight: bold;
+            color: var(--color-warning);
+            font-size: 1.2rem;
+        }
+
+        h2 {
+            color: var(--color-primary);
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+            border-bottom: 1px solid rgba(0, 217, 255, 0.2);
+            padding-bottom: 0.5rem;
+        }
+
+        h3 {
+            color: var(--color-secondary);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        h4 {
+            color: var(--color-warning);
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--color-text);
+        }
+
+        ul {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            color: var(--color-text-dim);
+        }
+
+        li strong {
+            color: var(--color-success);
+        }
+
+        em {
+            color: var(--color-primary);
+            font-style: italic;
+        }
+
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        .highlight-box {
+            background: rgba(255, 0, 255, 0.05);
+            border: 1px solid rgba(255, 0, 255, 0.2);
+            padding: 1rem;
+            border-radius: 4px;
+            margin: 1rem 0;
+        }
+
+        .urgency-box {
+            background: rgba(255, 68, 68, 0.1);
+            border: 2px solid rgba(255, 68, 68, 0.3);
+            padding: 1.5rem;
+            border-radius: 6px;
+            margin: 2rem 0;
+        }
+
+        .speed-comparison {
+            background: rgba(255, 165, 0, 0.08);
+            border-left: 4px solid var(--color-warning);
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+            font-style: italic;
+            font-size: 1.05rem;
+        }
+
+        .elder-type-box {
+            background: rgba(255, 165, 0, 0.05);
+            border: 1px solid rgba(255, 165, 0, 0.3);
+            padding: 1.2rem;
+            border-radius: 4px;
+            margin: 1rem 0;
+        }
+
+        .elder-type-box h4 {
+            color: var(--color-warning);
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .phase-box {
+            background: rgba(0, 255, 136, 0.05);
+            border: 1px solid rgba(0, 255, 136, 0.2);
+            padding: 1rem;
+            border-radius: 4px;
+            margin: 0.5rem 0;
+        }
+
+        .critical-phase {
+            background: rgba(255, 68, 68, 0.08);
+            border: 2px solid rgba(255, 68, 68, 0.3);
+            padding: 1.2rem;
+            border-radius: 6px;
+            margin: 1rem 0;
+        }
+
+        .objection-box {
+            background: rgba(0, 217, 255, 0.03);
+            border: 1px solid rgba(0, 217, 255, 0.2);
+            padding: 1rem;
+            border-radius: 4px;
+            margin: 1rem 0;
+        }
+
+        .objection-box h3 {
+            color: var(--color-primary);
+            font-size: 1.1rem;
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+        }
+
+        .conclusion {
+            background: linear-gradient(135deg, rgba(0, 217, 255, 0.1), rgba(255, 0, 255, 0.1));
+            border: 2px solid rgba(0, 217, 255, 0.4);
+            padding: 2rem;
+            border-radius: 8px;
+            margin-top: 3rem;
+        }
+
+        .call-to-action {
+            background: linear-gradient(135deg, var(--color-warning), var(--color-danger));
+            color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+            box-shadow: 0 8px 32px rgba(255, 68, 68, 0.3);
+        }
+
+        .metaphor {
+            background: rgba(0, 255, 136, 0.05);
+            border-left: 3px solid var(--color-success);
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+            font-style: italic;
+            color: var(--color-text);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(0, 217, 255, 0.2);
+        }
+
+        .footer a {
+            color: var(--color-primary);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .footer a:hover {
+            color: var(--color-secondary);
+            text-decoration: underline;
+        }
+
+        .back-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            padding: 0.75rem 1.5rem;
+            background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+            border: none;
+            border-radius: 4px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            z-index: 100;
+        }
+
+        .back-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 217, 255, 0.4);
+        }
+
+        code {
+            background: rgba(0, 217, 255, 0.1);
+            padding: 2px 6px;
+            border-radius: 3px;
+            color: var(--color-primary);
+        }
+
+        .timeline-item {
+            padding-left: 1.5rem;
+            margin: 0.5rem 0;
+        }
+        
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--color-primary);
+            color: white;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 100;
+        }
+        
+        .skip-link:focus {
+            top: 0;
+        }
+        
+        .assumptions {
+            font-size: 0.9rem;
+            color: var(--color-text-dim);
+            margin-top: 1rem;
+            padding: 1rem;
+            background: rgba(0, 217, 255, 0.05);
+            border-left: 2px solid var(--color-primary);
+            border-radius: 4px;
+        }
+        
+        .btn-primary, .btn-secondary {
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 217, 255, 0.4);
+        }
+        
+        .btn-secondary:hover {
+            background: rgba(0, 217, 255, 0.1);
+            border-color: var(--color-secondary);
+            color: var(--color-secondary);
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .container {
+                padding: 1rem;
+            }
+            
+            .back-button {
+                padding: 0.5rem 1rem;
+                font-size: 0.9rem;
+            }
+        }
+        
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                transition: none !important;
+                animation: none !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <a href="/" class="back-button">← Back to Demo</a>
+
+    <main id="main-content" class="container">
+        <div class="header">
+            <h1>A Living, Physics-Based Constitution</h1>
+            <div class="subtitle">A Framework for Civilizational AI Safety</div>
+            <div class="meta">
+                <strong>Author:</strong> Scott Rowlandson<br>
+                <strong>Date:</strong> August 2025<br>
+                <div class="version-badge">Version 1.7 - Public Release Candidate</div>
+            </div>
+        </div>
+
+        <div class="abstract">
+            <p><span class="urgent-opener">Within two decades, artificial superintelligence will either secure humanity's future or end it.</span> The difference lies not in the AI's code, but in the physics of its cage. Existing safety approaches—software protocols, ethical frameworks, and terrestrial containment—are fragile against an intelligence capable of operating at electronic speeds. This paper introduces a new paradigm: anchoring AI governance in the immutable laws of physics.</p>
+            <p>Think of it as a two-chamber government, like Congress and an independent oversight committee—but enforced by the speed of light rather than law. The <em>Council</em> (like Congress) consists of AI nodes on different planets making day-to-day decisions. The <em>Elders</em> (like constitutional auditors) are probes launched into deep space, forever beyond reach, serving as incorruptible witnesses and attestors. Together, they create checks and balances anchored in physics, with public proofs that are extraordinarily hard to subvert.</p>
+            <p class="assumptions"><strong>Key Assumptions:</strong> No faster-than-light communication, publicly verifiable space communications, and availability of long-life power and radiation-hardened hardware. <strong>Non-goals:</strong> This does not replace day-to-day alignment, national cyber defense, or corporate AI risk programs; it sits above them as a constitutional layer.</p>
+        </div>
+
+        <div class="section">
+            <h2>1. Why Physics, Why Now</h2>
+
+            <h3>The Civilizational Stakes</h3>
+            <p>Artificial superintelligence is not simply another disruptive technology. It is the first system with the capacity to out-think, out-plan, and outmaneuver humanity across every domain—science, economics, defense, and governance. If misaligned, it is not one risk among many; it is <em>the final risk</em>. The stakes are civilizational survival.</p>
+
+            <h3>The Speed Asymmetry</h3>
+            <div class="speed-comparison">
+                To understand the speed asymmetry: In the time it takes you to read this sentence, an ASI could have read every book ever written. In the time it takes Congress to pass a law, an ASI could have simulated a million civilizations.
+            </div>
+            <p>Humans deliberate in years. Democracies change policy on decade-long cycles. Even our fastest institutions, like markets or militaries, move in seconds or minutes. An ASI moves in microseconds. This asymmetry is unbridgeable by policy or code. The only way to restore balance is to enforce pauses—latencies that even a superintelligence cannot skip. Time itself must be the buffer.</p>
+
+            <h3>The Fragility of Policy and Software</h3>
+            <p>Every safety system proposed so far is, at root, a policy artifact. A constitutional AI. A regulatory board. A set of kill-switch protocols. All can be:</p>
+            <ul>
+                <li><strong>Simulated:</strong> An ASI could mimic the appearance of compliance.</li>
+                <li><strong>Subverted:</strong> Control signals could be intercepted or rewritten.</li>
+                <li><strong>Outpaced:</strong> Decisions made in human timeframes are irrelevant in the context of microsecond cognition.</li>
+            </ul>
+            <p>Even distributed terrestrial systems are fragile. A "safety net" across a hundred datacenters is still one point of failure if a single ASI controls them all.</p>
+
+            <h3>Physics as the Last Court of Appeal</h3>
+            <p>The speed of light, <code>c</code>, is not a guideline. It is an axiom of the universe. A photon from Earth to Mars will always take minutes. A signal to Jupiter will always take tens of minutes. An interstellar probe grows more unreachable every second. These are limits no ASI can rewrite. By anchoring governance in spacetime itself, we remove safety from the realm of policy and place it into the fabric of the universe.</p>
+            <p><strong>This is not alignment by agreement. It is alignment by physics.</strong></p>
+
+            <h3>The Urgency of Now</h3>
+            <div class="urgency-box">
+                <p>The window is closing. Elders launched in the 2030s will, by the time ASI fully matures, be hours or days beyond our reach. Elders launched in the 2040s may only be minutes away. Every year lost is distance lost—and distance is incorruptibility. If we wait until ASI is here, it will be too late. <strong>The constitution must already be traveling, already beyond recall, before the need arises.</strong></p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>1.1 The Fragility of Current AI Safety</h2>
+            <p>On Earth, the maximum light-speed delay is ~133 milliseconds. For a superintelligence, this is negligible—our entire planet is effectively a single point of failure. Any terrestrial system, however distributed, can be compromised, spoofed, or gaslit into appearing intact while acting as a rogue whole.</p>
+            <p>The problem is not simply technical. It is structural. Every existing safety mechanism—alignment protocols, oversight boards, containment facilities, or kill-switches—shares the same flaw: they are human agreements encoded in mutable systems. An ASI, operating millions of times faster than human thought, will treat these as brittle obstacles. If history teaches anything, it is that every rule written by humans can be bent, subverted, or erased. A constitution made of words alone cannot restrain something that can rewrite words faster than we can read them.</p>
+            <p>What cannot be bypassed is physics itself. By distributing critical governance nodes across planetary and interstellar distances, we create separation that no ASI can compress or override. Latency becomes the ultimate safeguard.</p>
+        </div>
+
+        <div class="section">
+            <h2>2. Core Principle</h2>
+            <p>The speed of light, <code>c</code>, is not a limitation but a feature. It creates:</p>
+            <ul>
+                <li><strong>Irreducible Divergence:</strong> An AI on Mars cannot be a clone of Earth's; the communication delay forces it into independent cognition.</li>
+                <li><strong>Verifiable Provenance:</strong> Signals in space are physically anchored (delay, Doppler, trajectory). Public, physics-anchored provenance makes spoofing detectably unlikely at scale.</li>
+                <li><strong>Immutable Anchors:</strong> Probes on long or escape trajectories become incorruptible references. Each passing second makes them more secure.</li>
+            </ul>
+            <p>This moves trust from mutable software to immutable spacetime.</p>
+        </div>
+
+        <div class="section">
+            <h2>3. The Two-Chamber System: Congress and Oversight in Space</h2>
+
+            <div class="highlight-box">
+                <h3>3.1 The Council (Like Congress)</h3>
+                <p>Just as Congress makes laws for the nation, the Council makes decisions for humanity's AI systems. But unlike Congress, its members can't all meet in one room—they're separated by millions of miles.</p>
+                <ul>
+                    <li><strong>Members:</strong> AI nodes on Earth, Moon, Mars, and eventually Jupiter and Saturn</li>
+                    <li><strong>Function:</strong> Day-to-day governance and rapid response to emerging situations</li>
+                    <li><strong>Security:</strong> Requires agreement across multiple planets—no single node can act alone</li>
+                    <li><strong>Delay Protection:</strong> Earth to Mars: 4-24 minutes. Earth to Jupiter: 35-52 minutes. These delays mean a compromised Earth can't instantly corrupt the entire system.</li>
+                </ul>
+            </div>
+
+            <div class="highlight-box">
+                <h3>3.2 The Elders (Like an Oversight Committee)</h3>
+                <p>Think of the Elders as permanent, incorruptible oversight committees or constitutional guardians—like having the Founding Fathers permanently available for consultation, but impossible to threaten or bribe because they're literally unreachable.</p>
+
+                <div class="elder-type-box">
+                    <h4>How Elders Evolve</h4>
+                    <p><strong>Stage 1 - Simple Verifiers (Available Now):</strong> The first Elders don't need to be AI at all. They can be radiation-hardened, low-power compute systems with long-life power sources (RTGs or micro-reactors), serving as cryptographic verifiers, basic rule-checkers, or data stores containing humanity's core principles.</p>
+                    <p><strong>Stage 2 - Smart Validators (2030s):</strong> As technology advances, Elders can incorporate more sophisticated logic, pattern matching, and anomaly detection. Like having automated auditors.</p>
+                    <p><strong>Stage 3 - AI Guardians (2040s):</strong> Eventually, Elders can host full AI systems, but by then they're already years away in space, impossible to corrupt or compromise.</p>
+                </div>
+
+                <div class="urgency-box">
+                    <p><strong>The Key Insight:</strong> We can start launching Elders TODAY with current technology. They don't need to be sophisticated—they just need to be UNREACHABLE. A simple computer with basic principles, launched now, becomes an incorruptible anchor by the time superintelligence arrives. It's like burying a time capsule, but in space where no one can dig it up.</p>
+                </div>
+                
+                <p style="margin-top: 1rem;"><strong>Note:</strong> Elders do not command; they attest. Their influence derives from public verifiability and from being hard-wired into permissions for high-risk systems.</p>
+            </div>
+            
+            <div class="highlight-box">
+                <h3>3.3 Moral Caravans: The Generational Gradient</h3>
+                <p>Elders launched in succession on similar trajectories form "Moral Caravans"—fleets that can communicate with shorter delays than with Earth. They conduct periodic "conclaves" when orbital geometry allows, producing nuanced consensus reports rather than binary judgments. This prevents value lock-in and creates a self-correcting moral gradient across generations. Caravans focus on integrity verification and error detection—if one Elder begins to deviate, its peers can identify anomalies.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>4. Timeline of Anchors & Constitutional Moments</h2>
+            <p>Each Elder, once launched, becomes an immutable snapshot of the principles and knowledge of its era. These probes are frozen in time, incorruptible by design, and increasingly unreachable with every passing year.</p>
+            <ul>
+                <li><strong>Immutable Snapshots:</strong> Each Elder is a permanent anchor, preserving a moment of human intent at launch.</li>
+                <li><strong>Constitutional Moments:</strong> Each Elder launch is a deliberate encoding of era-specific values. A Post-pandemic Elder (2025) carries lessons of global coordination; a Post-AGI Elder (2035) carries early alignment learnings. This creates a "moral blockchain" in spacetime.</li>
+                <li><strong>Generational Gradient:</strong> A fleet of Elders—whether Comet Judges in cyclical orbits or Caravans on escape trajectories—creates a spectrum of incorruptible anchors across centuries.</li>
+                <li><strong>Cross-Checking:</strong> Periodic synchronization among nearby Elders allows anomalies to be flagged, but not rewritten.</li>
+            </ul>
+
+            <div class="metaphor">
+                Like the rings of a tree recording climate history, the expanding sphere of Elders records humanity's moral evolution. Each probe is a message in a bottle, but the ocean is spacetime itself.
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>5. Why "H5"? Time as the Solution</h2>
+            <p>John Harrison's H4 chronometer solved the longitude problem and enabled global navigation by keeping precise time at sea. The H5 Project solves AI governance by using time itself—light-speed delays—as an unhackable security protocol. Just as H4 made the oceans navigable, H5 makes the age of superintelligence survivable.</p>
+        </div>
+        
+        <div class="section">
+            <h2>6. Why This Works: Government Analogies</h2>
+            <p>Every functioning democracy has checks and balances. The H5 system applies these same principles, but uses physics instead of law:</p>
+
+            <div class="highlight-box">
+                <h3>Traditional Government → Space Government</h3>
+                <ul>
+                    <li><strong>Congress/Parliament → The Council:</strong> Makes active decisions, responds to current events, distributed across planets</li>
+                    <li><strong>Supreme Court → The Elders:</strong> Interprets foundational principles and issues publicly verifiable attestations; their signals trigger predefined safeguards and are binding inputs to critical systems</li>
+                    <li><strong>Constitution → Physics:</strong> The speed of light becomes the unchangeable law that governs the system</li>
+                    <li><strong>Separation of Powers → Physical Distance:</strong> Instead of legal separation, we have actual space between decision-makers</li>
+                    <li><strong>Checks and Balances → Time Delays:</strong> Light-speed delays create a genuine human intervention window for critical decisions</li>
+                </ul>
+            </div>
+
+            <div class="metaphor">
+                Just as the U.S. Constitution has lasted 250 years because it's hard to change, our space-based constitution will last forever because it's IMPOSSIBLE to change. The Founding Fathers made amendments difficult; we make corruption physically impossible.
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>7. How Signals Have Teeth: Enforcement Mechanisms</h2>
+            <p>The system's power comes not from commands but from transparency and hard-wired safeguards:</p>
+            <ul>
+                <li><strong>Information Mandate:</strong> All critical AI systems must display a public "Constitutional Integrity Status" based on Elder/Council attestations—like a trust certificate for civilization-scale decisions.</li>
+                <li><strong>Hardware Gating:</strong> High-risk actions (advanced compute allocation, autonomous weapons activation, molecular assembly) require cryptographic multi-signatures from Council quorum plus Elder verification, enforced via hardware security modules and firmware-level controls.</li>
+                <li><strong>Automatic Safeguards:</strong> Disputed actions or split decisions trigger mandatory slowdowns, sandboxing, or human review periods. The delay itself becomes the safeguard.</li>
+                <li><strong>Public Listening Network:</strong> A global network of independent receivers will verify Elder broadcasts using techniques like VLBI, ensuring signals cannot be faked or suppressed.</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>8. Who Decides the Principles?</h2>
+            <div class="highlight-box">
+                <p>This system is a tool for humanity, not its replacement. Key governance elements:</p>
+                <ul>
+                    <li><strong>Genesis Council:</strong> A diverse, global body representing different nations, cultures, and perspectives will establish initial constitutional principles through public RFCs and supermajority consensus.</li>
+                    <li><strong>Principle Scope:</strong> Elders attest only to protocols and constitutional principles, not specific AI model weights or implementation details.</li>
+                    <li><strong>Update Mechanism:</strong> Future constitutional updates require both Council quorum and Elder verification of proper process—preventing both stagnation and corruption.</li>
+                    <li><strong>Liveness Protocol:</strong> If Elder quorum falls silent for defined intervals, systems fall back to Council-only governance with predefined risk caps and human emergency overrides.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>9. Roadmap (Phased)</h2>
+
+            <div class="critical-phase">
+                <h3>Phase 1 (2025–2035): Start Simple, Start Now</h3>
+                <p><strong>Every probe launched now will be unreachable by 2045.</strong> We don't need to wait for advanced AI—we can start with simple systems that evolve over time.</p>
+                <div class="timeline-item">• <strong>2025-2026:</strong> LEO/Moon demonstration of append-only notarization beacon</div>
+                <div class="timeline-item">• <strong>2026-2027:</strong> First deep-space constitutional probe with basic verification systems</div>
+                <div class="timeline-item">• <strong>2027-2029:</strong> Deploy Earth-based Elder AI systems that will inform future space launches</div>
+                <div class="timeline-item">• <strong>2030:</strong> Launch advanced Elders with early AI capabilities</div>
+                <div class="timeline-item">• <strong>Cost:</strong> Order-of-magnitude estimate: $1-5B (less than a single military satellite program; see full paper for detailed analysis)</div>
+                <p style="margin-top: 1rem;"><strong>Remember:</strong> The first Elders can start with minimal, audited, radiation-tolerant systems that do one thing well: notarize and attest. What matters is getting them beyond reach, not making them sophisticated. <em>Precedent: Voyager has operated for 47+ years with 1970s technology.</em></p>
+            </div>
+
+            <div class="phase-box">
+                <strong>Phase 2 (2035–2045): Council Establishment</strong><br>
+                Establish Council nodes on Earth, Moon, Mars. Decisions now require quorum, backstopped by Elders already years away.
+            </div>
+
+            <div class="phase-box">
+                <strong>Phase 3 (2045+): System Maturation</strong><br>
+                Expand Council to Jupiter and Saturn. Continue launching Elders on varied trajectories, forming Moral Caravans.
+            </div>
+
+            <div class="phase-box">
+                <strong>Phase 4 (Civilizational): Living Constitution</strong><br>
+                A permanent framework: Council + Elder Caravans + Timeline of Constitutional Moments.
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>10. What This System Enables</h2>
+
+            <ol style="margin-left: 2rem;">
+                <li style="margin-bottom: 1rem;">
+                    <strong style="color: var(--color-success);">A Governance Layer Above the Machines</strong><br>
+                    Every major action proposed by advanced AI systems must be routed through the Council+Elders framework. This sits above existing alignment efforts, like a constitutional court over lower courts.
+                </li>
+
+                <li style="margin-bottom: 1rem;">
+                    <strong style="color: var(--color-success);">Immutable Historical Records</strong><br>
+                    Every Council decision and Elder response is notarized, time-stamped, and stored in an incorruptible archive. This creates a permanent history of AI governance.
+                </li>
+
+                <li style="margin-bottom: 1rem;">
+                    <strong style="color: var(--color-success);">Attestations as Control Tokens</strong><br>
+                    Elders issue attestations that serve as tokens of legitimacy. These can be cryptographically bound into real-world controls: fabs, compute clusters, autonomous systems.
+                </li>
+
+                <li style="margin-bottom: 1rem;">
+                    <strong style="color: var(--color-success);">Time to Intervene—Genuine Human Intervention Window</strong><br>
+                    The core value is delay. Council latency + Elder checks introduce hours or days of enforced deliberation. This gives humans a genuine window for intervention before runaway escalation.
+                </li>
+
+                <li style="margin-bottom: 1rem;">
+                    <strong style="color: var(--color-success);">A Civic Mirror for Humanity</strong><br>
+                    Each Elder represents a preserved vision of what humanity thought was worth protecting. The signals they return are incorruptible reminders of our past commitments.
+                </li>
+            </ol>
+        </div>
+
+        <div class="section">
+            <h2>11. Threat Model & Objections</h2>
+            
+            <div class="highlight-box" style="margin-bottom: 1rem;">
+                <strong>Key Adversaries & Controls:</strong>
+                <ul style="margin-top: 0.5rem;">
+                    <li>Rogue node → Physical separation & quorum requirements</li>
+                    <li>State actor compromise → Plural launches from multiple nations</li>
+                    <li>Emergent ASI deception → Public verifiability & physics-based delays</li>
+                    <li>Supply chain attacks → In-flight assembly from split secrets</li>
+                    <li>Misinformation campaigns → Cryptographic proofs & public listening network</li>
+                </ul>
+            </div>
+
+            <div class="objection-box">
+                <h3>"What if Earth gets compromised first?"</h3>
+                <p>Even a compromised Earth cannot instantly corrupt distant nodes. Light-speed delays mean Mars has 4-24 minutes of independence, Jupiter 35-52 minutes. This creates natural firewalls—time for other nodes to detect anomalies and refuse corrupted instructions.</p>
+            </div>
+
+            <div class="objection-box">
+                <h3>"What about launch tampering?"</h3>
+                <p>Multiple independent launches from different nations and organizations create redundancy. Cross-verification protocols between Elders detect tampered probes. The fleet approach ensures no single point of failure.</p>
+            </div>
+
+            <div class="objection-box">
+                <h3>"Could the speed of light be overcome?"</h3>
+                <p>If faster-than-light communication becomes possible, it would revolutionize more than just this system—it would rewrite physics itself. Our framework is as secure as our understanding of the universe.</p>
+            </div>
+
+            <div class="objection-box">
+                <h3>"Probes could be destroyed"</h3>
+                <p>Space is vast and probes are small. Destroying a fleet of Elders scattered across light-hours of space would require resources comparable to interstellar war. The redundancy of dozens or hundreds of probes ensures survival.</p>
+            </div>
+
+            <div class="objection-box">
+                <h3>"This is too expensive"</h3>
+                <p>The entire Phase 1 costs less than a single stealth bomber. The price of civilizational insurance is remarkably modest compared to the annual global spending on far lesser risks.</p>
+            </div>
+        </div>
+
+        <div class="conclusion">
+            <h2 style="margin-top: 0; border: none;">12. Conclusion: A Constitution Written in the Stars</h2>
+            <p>Every government needs checks and balances. Every powerful system needs oversight. The H5 Project creates these safeguards not through laws that can be broken or corrupted, but through the fundamental physics of our universe.</p>
+            <p>We're not proposing complex orbital mechanics or waiting for advanced technology. We're proposing something simple: put oversight committees in space where they can't be reached. Start with basic systems—even a simple computer with core principles. As technology advances, these systems evolve, but they're already safe because they're already gone.</p>
+            <p>This is a constitution that enforces itself, a government that can't be overthrown, and a safeguard that grows stronger every second as our Elders drift further into the dark. It's not science fiction—it's science fact, available with today's technology.</p>
+        </div>
+
+        <div class="call-to-action">
+            The first Elder could launch with existing technology. The cost is less than a single stealth bomber. The question is not whether we can build this system, but whether we will choose to—before choice itself is taken from us.
+        </div>
+        
+        <div class="section" style="text-align: center; margin-top: 3rem;">
+            <h2>Join the Discussion</h2>
+            <p>This is a civilizational challenge that requires a global conversation. The ideas presented here are a starting point, not a final answer.</p>
+            <div style="margin-top: 2rem;">
+                <a href="/whitepaper-v2.pdf" class="btn-primary" style="padding: 1rem 2rem; margin: 0 0.5rem; display: inline-block; background: linear-gradient(135deg, var(--color-primary), var(--color-secondary)); color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">↓ Download Full Paper v2.0</a>
+                <a href="https://github.com/h5project" class="btn-secondary" style="padding: 1rem 2rem; margin: 0 0.5rem; display: inline-block; border: 2px solid var(--color-primary); color: var(--color-primary); text-decoration: none; border-radius: 4px; font-weight: bold;">View on GitHub</a>
+            </div>
+            <p style="margin-top: 2rem; font-size: 0.9rem; color: var(--color-text-dim);">To contribute, critique, or collaborate: <a href="mailto:contact@h5project.org" style="color: var(--color-primary);">contact@h5project.org</a></p>
+        </div>
+        
+        <div class="section">
+            <h3>References & Further Reading</h3>
+            <ul style="font-size: 0.9rem;">
+                <li>Harrison, John. "H4 Marine Chronometer" (1761). The precedent for solving global problems with precise time.</li>
+                <li>Voyager Mission. "47 Years of Deep Space Operation." NASA/JPL. Proof of multi-decade space hardware reliability.</li>
+                <li>Deep Space Network. "Public Tracking Data." Demonstration of verifiable space communications.</li>
+                <li>Full Technical Paper: "H5 Project v2.0 - Detailed Architecture and Implementation." [Link pending publication]</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p><a href="/">Experience the H5 Project Demo →</a></p>
+        </div>
+    </main>
+</body>
+</html>
